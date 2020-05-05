@@ -1,0 +1,169 @@
+header{
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.918);
+}
+header label{
+  display: none;
+  padding: 10px;
+  height: 30px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+header label:hover{
+  cursor: pointer;
+  /*background: rgba(0,0,0,0.3);*/
+}
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu li:hover{
+  background: rgba(0,0,0,0.3);
+}
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.missatge{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.grid-sudoku {
+    margin-left: 40%;
+    margin-top: 20px;
+    display: table;
+    background: white;
+    border: 3px solid black;
+}
+
+.grid-sudoku > div:nth-child(3), .grid-sudoku > div:nth-child(6) {
+    border-bottom: 3px solid black;
+}
+
+.grid-row > div:nth-child(3), .grid-row > div:nth-child(6) {
+    border-right: 3px solid black;
+}
+
+.grid-cell {
+    display: table-cell;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(47, 47, 47);
+    text-align: center;
+    margin: 0;  
+}
+
+.grid-cell-editor {
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 40px; 
+}
+
+.button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 230px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px 0px 25px 0px;
+    font-weight: bold;
+    margin-left: 44%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0
+  }
+
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+  .list-animation-enter, .list-animation-leave-to {
+    opacity: 0;
+    transform: translateY(20px) translateX(20px) rotate(200deg) scale(0.5);
+}
+
+.list-animation-leave-active {
+    position: absolute;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.number{
+  font-size: 50px;
+  text-align: center;
+}
